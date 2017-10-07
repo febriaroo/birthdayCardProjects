@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.froositadwi.birthdaycardproject.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/birthdaycake"/>
+    <TextView
+        android:id="@+id/happyBirthdayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:text="@string/happyBirthday"
+        android:textColor="@color/mainPink"
+        android:textSize="24dp"/>
+    <TextView
+        android:id="@+id/birthdayWishesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/birthdayWishes"
+        android:textColor="@color/mainPink"
+        android:layout_margin="24dp"
+        android:textSize="24dp"/>
+    <Button
+        android:id="@+id/seeMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seeMore"
+        android:layout_above="@id/birthdayWishesTextView"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
